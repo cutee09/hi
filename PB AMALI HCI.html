@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pb amali</title>
+        <style>
+            /*header*/
+             body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff9e6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #fff3b0;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #ffe066;
+    }
+
+    header img {
+      height: 200px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #b8860b;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to bottom, #fff7cc, #ffffff);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .btn-tempah {
+      padding: 10px 25px;
+      background-color: #f4c430;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .btn-tempah:hover {
+      background-color: #e0ac00;
+      transform: scale(1.05);
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-around;
+      padding: 40px 20px;
+      background-color: #fffce6;
+    }
+
+    .feature {
+      width: 200px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+    }
+
+    .feature img {
+      width: 60px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff3b0;
+      color: #555;
+      font-size: 14px;
+    }
+
+    .slogan {
+      margin-top: 10px;
+      font-style: italic;
+      color: #b8860b;
+    }
+
+    #about-section {
+      display: none;
+      padding: 40px;
+      text-align: center;
+      background-color: #fff9cc;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    </style>
+</head>
+<body>
+
+<header>
+  <img src="c:\Users\SIBER 9 PC 1\Downloads\Pink Floral Flower Shop Banner.png" alt="Logo sek">
+  <section class="hero" id="hero">
+  <nav>
+    <a onclick="scrollToSection('hero')">Halaman Utama</a>
+    <a onclick="showAbout()">Tentang Kami</a>
+    <a href="#">Tempahan</a>
+    <a href="#">Lokasi</a>
+    <a href="#">Hubungi</a>
+  </nav>
+</header>
+
+<section class="hero" id="hero">
+    <h1>Selamat Datang Ke</h1>
+  <h2>Borang Pendaftaran</h2>
+  <p>isi borang dibawah</p>
+  <center>
+  <tb>username</tb>
+  </center>
+  <input type="text" name="username" class="form"placeholder="enquiry">
+          <center>
+            <tb>Tarikh</tb>
+            </center>
+        <input type="date" class="form">
+        <center>
+          <tb>jenis bunga</tb>
+          </center>
+  <div class="kandungan">
+    <form action="form">
+    <select class="form">
+        <option>bunga</option>
+        <option>bunga</option>
+        <option>bunga</option>
+        <option>bunga matahari</option>
+        </select>
+        </form>
+  <button class="btn-tempah">Hantar Sekarang</button>
+</section>
+<footer>
+  <p>Hak cipta terpelihara © Muhammad Iman Hafizuddin bin Mohd Harun</p>
+  <div class="slogan">Love Grows Here</div>
+</footer>
+
+<script>
+  function showAbout() {
+    document.getElementById('about-section').style.display = 'block';
+    window.scrollTo({ top: document.getElementById('about-section').offsetTop - 50, behavior: 'smooth' });
+  }
+
+  function scrollToSection(id) {
+    const section = document.getElementById(id);
+    if (section) {
+      window.scrollTo({ top: section.offsetTop - 50, behavior: 'smooth' });
+    }
+  }
+</script>
+
+</body>
+</html>
+
+           
